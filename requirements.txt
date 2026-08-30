@@ -1,0 +1,21 @@
+# Python 3.12. Kurulum:
+#   python -m venv .venv && .venv/bin/pip install -r requirements.txt
+#
+# Sürümler ölçümlerin alındığı ortama sabitlendi (SPEC bölüm 6). VLM
+# sürümü değişirse isim/TC okumaları değişebilir; SPEC'teki doğruluk
+# rakamları bu sürümlere aittir.
+
+# PDF okuma, metin katmanı ve görüntü üretimi — modelsiz akışın tamamı
+pymupdf==1.28.2
+
+# Yerel VLM (Apple Silicon). Bulut API kalıcı olarak kapalı, SPEC 5.1.
+# Model: mlx-community/Qwen3-VL-8B-Instruct-8bit (~9 GB, ilk çalıştırmada iner)
+mlx==0.32.0
+mlx-vlm==0.6.10
+
+# Yerel web arayüzü (VLM/OCR aynı kod; bulut yok).
+# FastAPI 0.133+ Starlette 1.0.1 ister — mlx-vlm de aynı alt sınırı koyuyor.
+fastapi==0.133.0
+starlette==1.0.1
+uvicorn==0.40.0
+python-multipart==0.0.20

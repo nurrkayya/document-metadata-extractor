@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------
+# KİŞİSEL VERİ — asla commit edilmeyecek
+# Bu satırları silme. Kişisel veri git geçmişine girerse
+# temizlenmesi çok zordur.
+# ---------------------------------------------------------------
+
+# Girdi
+ornekler/
+
+# CLI çıktı kovaları (SPEC 4.2; çıktı kökü --cikti veya .)
+arsiv/
+okunamadi/
+dogrulanmali/
+ayrildi/
+bolunmeli/
+hata/
+ilgisiz/
+
+# Web arayüzü çıktı kökü (proje arsiv/ ile karışmaz)
+web_cikti/
+
+# Merkezi indeksler / durum (kişi adları ve TC içerir)
+person_data.json
+dogrulanmali.json
+.islenmis_hashler.json
+
+# Koşu kayıtları kişi adları içerir
+*.log
+kayitlar/
+cikti/
+
+# Altın setler ve doğrulama — kişisel veri
+altin_set/
+altin_set_elyazisi/
+altin_set.csv
+dogrulama*.csv
+
+# Faz 4: fine-tune eğitim seti ve türetilmiş veri seti — kişisel veri
+egitim_seti_elyazisi/
+
+# Belgeler ve türetilmiş görüntüler
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.tiff
+
+# Model ağırlıkları ve önbellek (GB'larca)
+models/
+.cache/
+*.safetensors
+*.gguf
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Araç çıktıları / geçici paketler
+repomix-output.xml
+
+# Kişisel çalışma notları / AI-yardımcı bağlam dosyaları — proje çalışması için gerekmez
+staj-gunlugu.md
+PROJECT_BRIEF_FOR_GEMINI.md
+PROJECT_CURRENT_STATE_FOR_GEMINI.md
+PROJECT_FULL_FOR_GEMINI.md
+
+# Claude Code oturum/ayar dosyaları
+.claude/
