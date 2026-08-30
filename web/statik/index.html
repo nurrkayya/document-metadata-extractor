@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Sicil belgesi</title>
+  <link rel="stylesheet" href="/statik/stil.css?v=21">
+</head>
+<body>
+  <div class="sabit-ust">
+    <header class="ust">
+      <div class="ust-sol">
+        <div class="arma">SB</div>
+        <div>
+          <h1>SİCİL BELGESİ</h1>
+          <p class="altbaslik">Yerel çıkarım · sayfa ayırma · insan onayı</p>
+        </div>
+      </div>
+      <div class="ust-orta" id="ilerleme" hidden></div>
+      <div class="ust-sag">
+        <span id="vlm-rozet" class="rozet soluk">VLM</span>
+      </div>
+    </header>
+
+    <nav class="sekme" id="sekmeler">
+      <button data-gorunum="yukle" class="aktif">Yükle</button>
+      <button data-gorunum="sonuclar">Sonuçlar <span id="ozet-rozet" class="sayi" hidden></span></button>
+      <button data-gorunum="incele" id="sekme-incele" hidden>İncele <span id="incele-rozet" class="sayi" hidden></span></button>
+      <button data-gorunum="birlestir" id="sekme-birlestir" hidden>Birleştir</button>
+    </nav>
+  </div>
+
+  <main id="kok">
+    <p class="bos">Arayüz yükleniyor…</p>
+  </main>
+  <div id="modal" class="modal" hidden aria-hidden="true"></div>
+  <aside id="kisayol-panel" class="kisayol-panel" hidden></aside>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="/statik/uygulama.js?v=21"></script>
+</body>
+</html>
